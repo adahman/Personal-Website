@@ -1,0 +1,260 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    background-color: orange;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    padding-top: 50px;
+}
+
+nav{
+    box-shadow:0 0 12px -2px black;
+    height:75px;
+    background-color: rgb(90, 89, 89);
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    align-items: center;
+    color:rgb(216, 127, 19);
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    padding: 10px;
+}
+
+#Links{
+    box-sizing: border-box;
+    display:flex;
+    align-items: center;
+}
+
+nav > h1{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+h1{
+    text-decoration: blanchedalmond;
+    margin: 10px;
+    font-size: xx-large;
+}
+
+
+a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 0.5em;
+    font-size: x-large;
+}
+
+
+a:hover{
+    background-color: rgba(255, 255, 255, .3);
+}
+
+
+
+main {
+    padding: 30px;
+    color: rgb(20, 20, 17);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25px;
+}
+
+
+main > img{
+    width: 300px;
+    float: right;
+    margin:10px;
+} 
+
+main > h2{
+    color:chocolate;
+    display: block;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: left;
+}
+
+p{
+    line-height: 1.6
+}
+
+
+main .quote{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, cursive;
+    color: #777;
+    font-size: 40px;
+    font-style: italic;
+    text-shadow: 1px 1px 2px black;
+    text-align: center;
+    margin-top: 200px;
+}
+
+footer{
+    box-shadow:0 0 12px -2px black;
+    height:75px;
+    background-color: rgb(90, 89, 89);
+    position: fixed;
+    bottom:0;
+    padding: 10px;
+    width:100%;
+    display: flex;
+    justify-content: center;
+}
+
+footer .media-link{
+    height:45px;
+
+}
+
+
+#socials{color: white;
+    display:flex;
+    flex-direction: row;
+    text-decoration:underline;
+    margin:10px;
+    font-size: x-large;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+
+#about-myself-header{
+    text-decoration: none;
+    font: 1em sans-serif;
+}
+
+main h2{
+    color: rgb(43, 58, 194);
+}
+
+main > .about-myself-section1,.about-myself-section2,.about-myself-section3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+}
+
+
+.about-myself-section1 img{
+    float:right;
+    margin-left: 20px; 
+    margin-bottom: 10px;
+    width: 300px; 
+}
+
+.about-myself-section2 img{
+    float:right;
+    margin-left: 20px; 
+    margin-bottom: 10px;
+    width: 300px; 
+}
+
+.about-myself-section3 img{
+    margin-left: 20px; 
+    margin-bottom: 10px;
+    width: 300px; 
+}
+
+
+
+#Projects-header{
+    text-decoration: underline;
+    color: #333;
+    font-size:32px;
+    margin-bottom:20px;
+}
+
+#Projects{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    box-sizing:border-box;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+#First-Project,#Second-Project,#Third-Project,#Fourth-Project{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px  solid black;
+    width:600px;
+    padding: 20px;
+    margin: 10px;
+    background-color: wheat;
+}
+
+#Projects h2{
+    color:orangered;
+}
+#Projects img{
+    width:300px;
+}
+
+main h1{
+    color: rgb(79, 81, 82);
+    text-align: center;
+    text-decoration: underline;
+}
+main #form{
+    text-align: center;
+}
+
+textarea{
+    height: 100px;
+    resize: vertical; 
+    width: 500px;
+}
+
+input{
+    height:30px;
+    resize: vertical;
+    width: 250px;
+}
+
+
+button {
+    padding: 8px 16px;
+    background-color: #942f2f;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #44cc1b;
+}
+
+
+#form div{
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+
+
+@media screen and (min-width: 600px){
+    section{
+        flex-direction: row;
+    }
+}
